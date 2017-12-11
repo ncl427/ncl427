@@ -11,13 +11,13 @@ body{
 }
 
 .contactPatch div:nth-child(odd){
-	width: 30% !important;
+	width: 26% !important;
 	text-align: right;
 	vertical-align: top;
 	padding-right: 5px;
 	font-weight: bold;
 }
 .contactPatch div:nth-child(even){
-	width: 68% !important;
+	width: 72% !important;
 	text-align: justify;
 }
