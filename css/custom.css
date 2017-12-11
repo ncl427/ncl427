@@ -1,0 +1,23 @@
+body{
+	padding-top: 0 !important;
+}
+
+.contactPatch{
+	width: 100%;
+}
+
+.contactPatch div{
+	display: inline-block;
+}
+
+.contactPatch div:nth-child(odd){
+	width: 30% !important;
+	text-align: right;
+	vertical-align: top;
+	padding-right: 5px;
+	font-weight: bold;
+}
+.contactPatch div:nth-child(even){
+	width: 68% !important;
+	text-align: justify;
+}
