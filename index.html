@@ -19,26 +19,47 @@
 </head>
 
 <body>
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark static-top bg-dark">
-        <a class="navbar-brand" href="#">Network Convergence Lab</a>
+<header id="home">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand active" href="#home">Network Convergence Lab</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Projects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- <a class="dropdown-item" href="#ncl-project-nia-ibn">
+                            IBN Closed-loop Application for KOREN 플랫폼
+                        </a> -->
                         <a class="dropdown-item" href="#ncl-project-mcord">MCORD</a>
                         <a class="dropdown-item" href="#ncl-project-iov">SD-IoV</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#ncl-projects">Show All</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Publications
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#ncl-pub-journals">
+                            Journals
+                        </a>
+                        <a class="dropdown-item" href="#ncl-pub-conferences">
+                            Conferences
+                        </a>
+                        <a class="dropdown-item" href="#ncl-pub-patents">
+                            Patents
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#ncl-publications">Show All</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -88,19 +109,60 @@
 
     <div class="container marketing" style="max-width: 90%;">
         
-        <div class="row featurette" id="ncl-projects" style="padding-top: 2rem;">
-            
+    </div>
+
+    <div class="container marketing" style="max-width: 90%;">
+        
+        <div class="row featurette" id="ncl-lab-header" style="padding-top: 1rem;">
             <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                <h2 class="featurette-heading" style="margin: 0 0 1rem 0; font-size: 40px;">
+                <h2 class="featurette-heading" style="margin: 0 0 0 0; font-size: 40px;">
                     Network Convergence Lab
                 </h2>
-                <h2 class="featurette-heading" style="margin: 0 0 4rem 0; font-size: 32px;">
-                    On-going Projects
+            </div>
+        </div>
+        
+        <hr class="featurette-divider" style="margin: 3rem 0 0 0">
+
+        <div class="row featurette" id="ncl-projects" style="padding-top: 0.6rem;">
+            
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                <h2 class="featurette-heading" style="margin: 4rem 0 0rem 0; font-size: 40px;">
+                    Ongoing Projects
                 </h2>
             </div>
 
             <!--Project#01-->
-            <div class="col-md-7" id="ncl-project-mcord">
+            <div class="col-md-7" id="ncl-project-nia-ibn" style="padding-top: 5rem;">
+                <h2 class="featurette-heading" style="margin-top: 0; font-size: 28px;">
+                    Intent-based Application for E2E Network Orchestration
+                </h2>
+                <p class="lead text-justify">
+                    M-CORD is an open source reference solution built on the pillars of SDN, NFV and cloud technologies.
+                    It leverages open source software, disaggregation and virtualization of RAN and core functions of
+                    mobile wireless networks. M-CORD enables mobile edge applications and innovative services using
+                    micro-services architecture.
+                    </br>
+                    The upcoming 5G networks not only have to support increasing data rates but also must provides a
+                    common infrastructure on which new wireless services with vastly different network QoS requirements
+                    with lower delay are delivered. To address such needs, a 5G platform needs ability to dynamically
+                    create programmable virtual networks and differentiated traffic treatment utilizing solutions such
+                    network slicing. While today’s LTE networks do not support network slicing, the M-CORD platform
+                    allows operators to experiment with and realize network slicing on an LTE network without having to
+                    wait for the 5G standards to be ratified.
+                    </br>
+                    This work is focused on the establishment of an end to end (E2E) M-CORD based network slicing. The
+                    proposed architecture contains XOS (Service Orchestrator) which sits on top all the modules managing
+                    all services, OpenStack for the management of resources either computational or physical and ONOS
+                    for networking which contains Slicing app and Control apps.
+                </p>
+            </div>
+            <div class="col-md-5" style="padding-top: 5rem;">
+                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
+                     alt="Generic placeholder image" src="images/proj-nia-ibn.jpg">
+            </div>
+
+            <!--Project#02-->
+            <div class="col-md-7" id="ncl-project-mcord" style="padding-top: 5rem;">
                 <h2 class="featurette-heading" style="margin-top: 0; font-size: 28px;">
                     A Framework for M-CORD-based Network Slicing
                 </h2>
@@ -124,12 +186,12 @@
                     for networking which contains Slicing app and Control apps.
                 </p>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5" style="padding-top: 5rem;">
                 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
-                     alt="Generic placeholder image" src="images/mcord-big-picture.png">
+                     alt="Generic placeholder image" src="images/proj-mcord.png">
             </div>
 
-            <!--Project#02-->
+            <!--Project#03-->
             <div class="col-md-7" id="ncl-project-iov" style="padding-top: 5rem;">
                 <h2 class="featurette-heading" style="margin-top: 0rem; font-size: 28px;">
                     SD-IoV - Software Defined Internet of Vehicles</h2>
@@ -155,7 +217,804 @@
             </div>
             <div class="col-md-5" style="padding-top: 5rem;">
                 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
-                     alt="Generic placeholder image" src="images/IoV-concept of local server to moniter traffic.jpg">
+                     alt="Generic placeholder image" src="images/proj-sd-iov-monitor.jpg">
+            </div>
+
+        </div>
+
+        <hr class="featurette-divider" style="margin: 3rem 0 0 0">
+
+        <div class="row" id="ncl-publications" style="padding-top: 5rem">
+
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                <h2 class="featurette-heading" style="margin: 0 0 0 0; font-size: 40px;">Publications</h2>
+            </div>
+
+            <!--Journals-->
+            <div class="row" id="ncl-pub-journals" style="padding: 4rem 0 0 0; width: 100%;">
+                <ul class="list-group pubHead">
+                    <table class="table table-striped table-bordered table-sm">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th>Title</th>
+                                <th>Published</th>
+                                <th>Cite</th>
+                            </tr>
+                        </thead>
+                        <tbody class="thead-light">
+                            <tr>
+                                <td scope="row">1</td>
+                                <td>
+                                    Abbas, Khizar, et al. "A Blockchain and Machine Learning-Based Drug Supply Chain Management and Recommendation System for Smart Pharmaceutical Industry." Electronics 9.5 (2020): 852.
+                                </td>
+                                <td>2020</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">2</td>
+                                <td>
+                                    Abbas, Muhammad Tahir, et al. "An adaptive approach to vehicle trajectory prediction using multimodel Kalman filter." Transactions on Emerging Telecommunications Technologies 31.5 (2020): e3734.
+                                </td>
+                                <td>2020</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">3</td>
+                                <td>
+                                    Rafiq, Adeel, Asif Mehmood, and Wang-Cheol Song. "Intent-Based Slicing between Containers in SDN Overlay Network." Journal of Communications 15.3 (2020).
+                                </td>
+                                <td>2020</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">4</td>
+                                <td>
+                                    Abbas, Muhammad Tahir, Afaq Muhammad, and Wang-Cheol Song. "SD-IoV: SDN enabled routing for internet of vehicles in road-aware approach." Journal of Ambient Intelligence and Humanized Computing 11.3 (2020): 1265-1280.
+                                </td>
+                                <td>2020</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">5</td>
+                                <td>
+                                    Rafiq, Adeel, Muhammad Afaq, and Wang-Cheol Song. "Intent-based networking with proactive load distribution in data center using IBN manager and Smart Path manager." Journal of Ambient Intelligence and Humanized Computing (2020): 1-18.
+                                </td>
+                                <td>2020</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">6</td>
+                                <td>
+                                    Jibran, Muhammad Ali, et al. "Position prediction for routing in software defined internet of vehicles." Journal of Communications 15.2 (2020): 157-163.
+                                </td>
+                                <td>2020</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">7</td>
+                                <td>
+                                    Abbas, Khizar, et al. "An efficient SDN‐based LTE‐WiFi spectrum aggregation system for heterogeneous 5G networks." Transactions on Emerging Telecommunications Technologies (2020): e3943.
+                                </td>
+                                <td>2020</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">8</td>
+                                <td>
+                                    Abbas, Muhammad Tahir, Afaq Muhammad, and Wang-Cheol Song. "Road-aware estimation model for path duration in Internet of vehicles (IoV)." Wireless Personal Communications 109.2 (2019): 715-738.
+                                </td>
+                                <td>2019</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">9</td>
+                                <td>
+                                    Afaq, Muhammad, Wang-Cheol Song, and M. G. Kang. "A software defined networking-based resilient framework combined with power-efficient PS-LTE network." International Journal of Advanced Intelligence Paradigms 11.1-2 (2018): 45-57.
+                                </td>
+                                <td>2018</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">10</td>
+                                <td>
+                                    Afaq, Muhammad, et al. "sFlow monitoring system in a disaster-resilient global SDN testbed based on KOREN/APII/TEIN network." International Journal of Computer Aided Engineering and Technology 10.4 (2018): 404-417.
+                                </td>
+                                <td>2018</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">11</td>
+                                <td>
+                                    Kim, Myung-Sup, et al. "Managing a very connected world: A report on APNOMS2015." Journal of Network and Systems Management 24.3 (2016): 754-763.
+                                </td>
+                                <td>2016</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">12</td>
+                                <td>
+                                    Amjad, Zubair, and Wang-Cheol Song. "Probabilistic Road-Aware Geocast In VANETs." International Journal of Electrical and Computer Engineering 5.3 (2015): 599.
+                                </td>
+                                <td>2015</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">13</td>
+                                <td>
+                                    Song, W.C. and Huang, Z.M., 2015. Aggregator Operation for EVs in Korean Smart Grids Testbed. In Computational Intelligence and Efficiency in Engineering Systems (pp. 321-330). Springer, Cham.
+                                </td>
+                                <td>2015</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">14</td>
+                                <td>
+                                    Song, Wang-Cheol, and Muhammad Shoaib. "A ZHLS Based Geocasting for Broadcasting Messages in VANET." International Journal of Computer and Electrical Engineering 6.4 (2014): 333.
+                                </td>
+                                <td>2014</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">15</td>
+                                <td>
+                                    Shoaib, Muhammad, and Wang-Cheol Song. "Clustering objects in heterogeneous information network using fuzzy C-mean." Mobile, Ubiquitous, and Intelligent Computing. Springer, Berlin, Heidelberg, 2014. 179-184.
+                                </td>
+                                <td>2014</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">16</td>
+                                <td>
+                                    Song, Wang-Cheol, et al. "Journal of KIISE: Information Networking." Journal of KIISE: Information Networking 40.1 (2013).
+                                </td>
+                                <td>2013</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">17</td>
+                                <td>
+                                    Shoaib, Muhammad, and Wang-Cheol Song. "User Oriented clustering of news articles using Tweets Heterogeneous Information Network." Journal of Internet Computing and Services 14.6 (2013): 85-94.
+                                </td>
+                                <td>2013</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">18</td>
+                                <td>
+                                    Han, Yuhun, et al. "Detection of Greedy Nodes in Wireless LAN through Comparing of Probability Distributions of Transmission Intervals." International Journal of Multimedia and Ubiquitous Engineering 8.1 (2013): 175-184.
+                                </td>
+                                <td>2013</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">19</td>
+                                <td>
+                                    Shoaib, Muhammad, and Wang-Cheol Song. "A Performance Comparison of Information Sharing Protocols in VANET." International Journal of Multimedia and Ubiquitous Engineering 7.3 (2012): 35-42.
+                                </td>
+                                <td>2013</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">20</td>
+                                <td>
+                                    Yeom, Jae Keun, et al. "OpenFlow Network Performance Evaluation under Heterogeneous Traffic." The Journal of the Korea Contents Association 12.12 (2012): 46-53.
+                                </td>
+                                <td>2012</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">21</td>
+                                <td>
+                                    Shoaib, Muhammad, et al. "Architecture of push service based on sns for sharing sensor information." Green and Smart Technology with Sensor Applications. Springer, Berlin, Heidelberg, 2011. 342-346.
+                                </td>
+                                <td>2013</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">22</td>
+                                <td>
+                                    Seok, Seung-Joon, Wang-Cheol Song, and Deokjai Choi. "Implementation of Pastry-based P2P system to share sensor data." International Journal of Sensor Networks 8.3-4 (2010): 125-135.
+                                </td>
+                                <td>2010</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">23</td>
+                                <td>
+                                    Huh, Jee-Wan, Sung-Hwa Lee, and Wang-Cheol Song. "Implementation of Policy Based Network Management System with COPS-PR for MANET." The Journal of The Institute of Internet, Broadcasting and Communication 9.5 (2009): 1-6.
+                                </td>
+                                <td>2009</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">24</td>
+                                <td>
+                                    Huh, Jee-Wan, and Wang-Cheol Song. "Implementation of Policy Based MANET Management System based on Active PDP Discovery." Journal of the Korea Academia-Industrial cooperation Society 10.11 (2009): 3176-3182.
+                                </td>
+                                <td>2009</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">25</td>
+                                <td>
+                                    Kim, Gang-Seok, and Wang-Cheol Song. "Exhibition Monitoring System using USN/RFID based on ECA." The Journal of The Institute of Internet, Broadcasting and Communication 9.6 (2009): 95-100.
+                                </td>
+                                <td>2009</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">26</td>
+                                <td>
+                                    Kim, Gang-Seok, Jee-Wan Huh, and Wang-Cheol Song. "Zone based on Wireless Sensor Network Management Protocol for Smart Home." The Journal of The Institute of Internet, Broadcasting and Communication 9.5 (2009): 65-71.
+                                </td>
+                                <td>2009</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">27</td>
+                                <td>
+                                    Kang, Min-Jae, et al. "Differences in Input Space Stability Between Using the Inverted Output of Amplifier and Negative Conductance for Inhibitory Synapse." International Symposium on Neural Networks. Springer, Berlin, Heidelberg, 2007.
+                                </td>
+                                <td>2007</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">28</td>
+                                <td>
+                                    Kim, Sung-Su, and Wang-Cheol Song. "WIPI based E-mail and Schedule Management System." The Journal of the Korea Contents Association 6.7 (2006): 50-57.
+                                </td>
+                                <td>2006</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">29</td>
+                                <td>
+                                    Lee, Kyung-Jin, and Wang-Cheol Song. "Active PDP Discovery for PBNM in MANETs." The Journal of Korean Institute of Communications and Information Sciences 31.5B (2006): 390-396.
+                                </td>
+                                <td>2006</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">30</td>
+                                <td>
+                                    Kang, Min-Jae, et al. "CMOS neuron activation function." Journal of Korean Institute of Intelligent Systems 16.5 (2006): 627-634.
+                                </td>
+                                <td>2006</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">31</td>
+                                <td>
+                                    Song, Wang-Cheol. "Applying the Policy scheme to the IntServ." Journal of information and communication convergence engineering 1.3 (2003): 109-114.
+                                </td>
+                                <td>2003</td>
+                                <td>
+                                    <svg data-toggle="tooltip" data-placement="right" title="click to copy citation" class="cite-icon" onclick="clipboard(this);" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                        <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </ul>
+            </div>
+
+            <!--Conferences-->
+            <div class="row" id="ncl-pub-conferences" style="padding: 4rem 0 0 0; width: 100%;">
+                <ul class="list-group pubHead">
+                    <li class="list-group-item text-center pubInHead">Conferences</li>
+                    <li class="list-group-item pubInBody">
+                        Khan, T.A., Mehmood, A., Ravera, J.J.D., Muhammad, A., Abbas, K. and Song, W.C., 2020, April. Intent-Based Orchestration of Network Slices and Resource Assurance using Machine Learning. In NOMS 2020-2020 IEEE/IFIP Network Operations and Management Symposium (pp. 1-2). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Khan, T.A., Afaq, M., Abbas, K., Rafiq, A., Mehmood, A. and Song, W.C., 2020. Generic Intent-Based Networking approach for end-to-end Slice Orchestration and Lifecycle Management. 한국통신학회 학술대회논문집, pp.468-469.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Abbas, K., Ahmed, K.T., Rafiq, A., Song, W.C. and Seok, S.J., 2020, January. An LTE-WiFi Spectrum Aggregation System for 5G Network: A Testbed. In 2020 International Conference on Information Networking (ICOIN) (pp. 753-755). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Mehmood, A., Mehmood, F. and Song, W.C., 2019, October. Cloud based E-Prescription management system for healthcare services using IoT devices. In 2019 International Conference on Information and Communication Technology Convergence (ICTC) (pp. 1380-1386). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Mehmood, A., Khan, T.A., Rivera, J.J.D. and Song, W.C., 2019, September. Dynamic Auto-scaling of VNFs based on Task Execution Patterns. In 2019 20th Asia-Pacific Network Operations and Management Symposium (APNOMS) (pp. 1-4). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Khan, T.A., Mehmood, A., Rivera, J.J.D. and Song, W.C., 2019, September. Machine Learning Approach for Automatic Configuration and Management of 5G Platforms. In 2019 20th Asia-Pacific Network Operations and Management Symposium (APNOMS) (pp. 1-6). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Rivera, J.J.D., Khan, T.A., Mehmood, A. and Song, W.C., 2019, September. Network Slice Selection Function for Data Plane Slicing in a Mobile Network. In 2019 20th Asia-Pacific Network Operations and Management Symposium (APNOMS) (pp. 1-4). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Rafiq, A. and Song, W.C., 2019. NO-Stack Based Mobility Performance Enhancement by Reducing Core Network Signaling in Cluster of Small Cells for 5G Network. 한국통신학회 학술대회논문집, pp.1504-1505.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Khan, T.A., Rivera, J.D., Mehmood, A. and Song, W.C., 2019. Generic Blockchain based Policy and Configuration Framework for Next-Generation Networks. 한국통신학회 학술대회논문집, pp.1483-1484.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Adeel, R., Javier, D.R. and Song, W.C., 2018. Intent Based Networking for Optimized Resource Management using IBN Manager and Smart Path Manager. 한국콘텐츠학회 ICCC 논문집, pp.81-82.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Abbas, M.T., Jibran, M.A. and Wang-Cheol, S.O.N.G., 2018. An approach for vehicle position estimation in Soft-Defined Internet of Vehicles. 한국통신학회 학술대회논문집, pp.202-205.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Mehmood, A., Khan, T.A., Rivera, J.D. and Wang-Cheol, S.O.N.G., 2018. An intent-based mechanism to create a network slice using contracts. 한국통신학회 학술대회논문집, pp.180-181.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Muhammad, A. and Song, W.C., 2018. A Novel Framework for Resource Orchestration in OpenStack Cloud Platform. KSII Transactions on Internet & Information Systems, 12(11).
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Khan, T.A., Rivera, J.D., Mehmood, A. and Song, W.C., 2018. Network Slicing Using Enhanced OpenAirInterface eNodeB and EPC under M-CORD Platform. 한국통신학회 학술대회논문집, pp.182-183.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Rivera, J.D., Khan, T.A., Asif, M. and Wang-Cheol, S.O.N.G., 2018. Network Slice Selection Function in a Virtualized Scenario. 한국통신학회 학술대회논문집, pp.175-176.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Ahmed, K.T. and Song, W.C., 2018. 5G Network Slicing and its Standards and Platforms. 한국통신학회지 (정보와통신), 35(8), pp.16-23.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Abbas, M.T. and Wang-Cheol, S.O.N.G., 2018. SDN based Road-Aware Routing for Internet of Vehicles. 한국통신학회 학술대회논문집, pp.417-418.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Abbas, M.T., Khan, T.A., Mahmood, A., Rivera, J.J.D. and Song, W.C., 2018, April. Introducing network slice management inside M-CORD-based-5G framework. In NOMS 2018-2018 IEEE/IFIP Network Operations and Management Symposium (pp. 1-2). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Ravera, J.D., Khan, T.A. and Wang-Cheol, S., 2018. Network Slice Selection Function on M-CORD. KNOM Review’18-02, 21(02).
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Muhammad, A., Kang, D.H., Seok, S.J. and Song, W.C., 2018. Service orchestration over clouds and networks. International Journal of Communication Networks and Distributed Systems, 21(4), pp.457-474.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Muhammad, A., Tahir, A.M., Ahmed, T., Diaz, J., Mahmood, A. and Song, W.C., 2018. A Framework for M-CORD-based Network Slicing. 한국통신학회 학술대회논문집, pp.379-380.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Khan, F.A., Song, W.C. and Ahn, K.J., 2018. Performance Analysis of Location-Aware Grid-Based Hierarchical Routing Protocol for Mobile Ad Hoc Networks. Wireless Communications and Mobile Computing, 2018.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Abbas, M.T. and Song, W.C., 2017, September. Infrastructure-assisted hybrid road-aware routing and QoS provisioning in VANETs. In 2017 19th Asia-Pacific Network Operations and Management Symposium (APNOMS) (pp. 370-373). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Muhammad, A. and Song, W.C., 2017. Framework for Resource Utilization-Based Dynamic Migration of VMs in OpenStack Clouds. 한국통신학회논문지, 42(8), pp.1562-1572.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Abbas, M.T. and Song, W.C., 2017, July. A path analysis of two-level hierarchical road. Aware routing in VANETs. In 2017 Ninth International Conference on Ubiquitous and Future Networks (ICUFN) (pp. 940-945). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Seok, S.J., Muhammad, A., Kim, K., Choi, D., Han, Y.H., Seok, W. and Song, W.C., 2017, July. multiFIA Multi-dimensional future Internet architecture. In 2017 Ninth International Conference on Ubiquitous and Future Networks (ICUFN) (pp. 87-92). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Muhammad, A. and Song, W.C., 2017. Deployment of OpenStack and its Integration with ONOS SDN Controller. 한국통신학회 학술대회논문집, pp.1131-1132.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Muhammad, A. and Song, W.C., 2017. Real-Time Classification, Visualization, and QoS Control of Elephant Flows in SDN. 한국통신학회논문지, 42(3), pp.612-622.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Jo, W., Tahir, A.M., Song, W.C., Lee, S.J. and Kim, K.H., 2016. Video Transfer in ad hoc networks using WiFi-Direct in the Disaster situation. 한국콘텐츠학회 ICCC 논문집, pp.403-404.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Afaq, M. and Song, W.C., 2016, October. sFlow-based resource utilization monitoring in clouds. In 2016 18th Asia-Pacific Network Operations and Management Symposium (APNOMS) (pp. 1-3). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Amjad, Z., Song, W.C. and Ahn, K.J., 2016, October. Context-Aware Routing for hovering information in Vehicular Ad-Hoc Networks. In 2016 18th Asia-Pacific Network Operations and Management Symposium (APNOMS) (pp. 1-6). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Amjad, Z., Song, W.C. and Ahn, K.J., 2016, July. Context-aware two-level hierarchical routing for VANETs. In 2016 Eighth International Conference on Ubiquitous and Future Networks (ICUFN) (pp. 1083-1088). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Amjad, Z., Song, W.C. and Ahn, K.J., 2016. Context-Aware Information Hovering for VANETs. 한국정보과학회 학술발표논문집, pp.1-3.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Afaq, M. and Song, W.C., 2016. Monitoring of Cloud-Based Resources. 한국정보과학회 학술발표논문집, pp.1684-1685.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Amjad, Z., Song, W.C. and Ahn, K.J., 2016, May. Two-level hierarchical routing based on road connectivity in VANETs. In 2016 International Conference on Industrial Engineering, Management Science and Application (ICIMSA) (pp. 1-5). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Amjad, Z., Song, W.C., Ahn, K.J. and Shoaib, M., 2016, April. Context aware data aggregation in vehicular ad-hoc networks. In NOMS 2016-2016 IEEE/IFIP Network Operations and Management Symposium (pp. 1257-1260). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Amjad, Z., Ahn, K.J. and Song, W.C., 2015, October. Delay-based Geocast routing protocol for message dissemination in vehicular highway networks. In 2015 International Conference on Information and Communication Technology Convergence (ICTC) (pp. 599-604). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C., Hong, W.K., Tonouchi, T. and Chen, C., 2015, September. Welcome to APNOMS 2015. In 17th Asia-Pacific Network Operations and Management Symposium: Managing a Very Connected World, APNOMS 2015 (p. 7275338).
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C., Ur Rehman, S. and Awan, M.B., 2015. Road Aware Information Sharing in VANETs. KSII Transactions on Internet & Information Systems, 9(9).
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Amjad, Z. and Song, W.C., 2015, August. Road aware QoS routing in VANETs. In 2015 17th Asia-Pacific Network Operations and Management Symposium (APNOMS) (pp. 133-138). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Afaq, M., Rehman, S.U. and Song, W.C., 2015, August. Visualization of elephant flows and qos provisioning in sdn-based networks. In 2015 17th Asia-Pacific Network Operations and Management Symposium (APNOMS) (pp. 444-447). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Amjad, Z. and Song, W.C., 2015, June. Map Aware Dual-Mode Geocast Routing in VANETs. In The 10th International Conference on Future Internet (pp. 21-26).
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Afaq, M., Rehman, S. and Song, W.C., 2015. Large flows detection, marking, and mitigation based on sFlow standard in SDN. 멀티미디어학회논문지, 18(2), pp.189-198.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kim, J.R., Afaq, M., Kang, G.W. and Song, W.C., 2015. SDN controller detection Openflow software. 중소기업융합학회 국제학술대회 논문집, 2(1), pp.37-38.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kang, G.W., Afaq, M., Jea-Rin, K.I.M. and Song, W.C., 2015. Openflow & sFlow-based Flows Visualization. 중소기업융합학회 국제학술대회 논문집, 2(1), pp.35-36.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Afaq, M., Rehman, S.U. and Song, W.C., 2015. A framework for classification and visualization of elephant flows in sdn-based networks. Procedia Computer Science, 65, pp.672-681.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Tseng, Y.C., Ata, S., Young, H. and Song, W.C., 2014, December. Welcome to APNOMS 2014. In APNOMS 2014-16th Asia-Pacific Network Operations and Management Symposium (p. 6996612).
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Musa, A., Hwang, S., Muthohar, F., Bang, G., Choi, D., Kim, K., Song, W., Seok, S. and Kim, S., 2014, September. Aggregation management design for user-defined network infrastructure. In The 16th Asia-Pacific Network Operations and Management Symposium (pp. 1-4). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Rehman, S.U., Song, W.C. and Kang, M., 2014, September. Network-wide traffic visibility in OF@ TEIN SDN testbed using sFlow. In The 16th Asia-Pacific Network Operations and Management Symposium (pp. 1-6). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Shafqat, R., Song, W.C. and Mingoo, K., 2014. Network-Wide Traffic Visibility in OF@ TEIN SDN Testbed using sFlow. IEICE Proceeding Series, (21), pp.TS1-2.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Fitriyani, N.L., Kim, J.R., Song, W.C., Cho, B. and Kim, S., 2014. sFlow Monitoring for a Virtualization Testbed in KREONET. In Proceedings of the Korea Information Processing Society Conference (pp. 234-237). Korea Information Processing Society.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Shoaib, M. and Song, W.C., 2013, September. Traffic aware optimized zone based hierarchal link state routing protocol for VANET. In 2013 IEEE 24th Annual International Symposium on Personal, Indoor, and Mobile Radio Communications (PIMRC) (pp. 3117-3122). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kim, J., Cha, B., Kim, J., Kim, N.L., Noh, G., Jang, Y., An, H.G., Park, H., Hong, J., Jang, D. and Ko, T., 2013. OF@ TEIN: An OpenFlow-enabled SDN testbed over international SmartX Rack sites. Proceedings of the Asia-Pacific Advanced Network, 36, pp.17-22.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kang, M.S., Huang, Z.M., Kim, T.B. and Song, W.C., 2013, April. Authentication for electrical charging of EVs in the private area considering E-roaming. In 2013 IEEE International Conference on Consumer Electronics-China (pp. 41-42). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Moon, Y.J., Park, J.H., Song, W.C., Lee, D.K. and Choi, D., 2013, April. NFC-based personal information management for U-health. In 2013 IEEE International Conference on Consumer Electronics-China (pp. 39-40). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Shoaib, M. and Song, W.C., 2012, September. Data aggregation for Vehicular Ad-hoc Network using particle swarm optimization. In 2012 14th Asia-Pacific Network Operations and Management Symposium (APNOMS) (pp. 1-6). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Shoaib, M., Song, W.C. and Kim, K.H., 2012, April. Cluster based data aggregation in vehicular adhoc network. In International Workshop on Communication Technologies for Vehicles (pp. 91-102). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Shoaib, M. and Song, W.C., 2012, April. Hovering information based vanet applications. In International Conference on Networked Digital Technologies (pp. 551-564). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Hong, James Won-Ki, et al. "Managing clouds, smart networks and services: a report on APNOMS 2011." Journal of Network and Systems Management 20.1 (2012): 134-142.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kang, M.S., Shoaib, M. and Song, W.C., 2012. A Relay Node Selection Scheme considering moving direction in VANET. In Proceedings of the Korea Information Processing Society Conference (pp. 560-563). Korea Information Processing Society.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Shoaib, M., Huh, J.W. and Song, W.C., 2012. Improving Geo-casting by Combining Any-cast and Hovering Information. Proceedings of the Asia-Pacific Advanced Network, 34, pp.43-51.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kang, M.S., Moon, Y.J., Kang, J.H., Lee, J.S. and Song, W.C., 2011. SOAP based security message for managing status of Electric Vehicles. In Proceedings of the Korea Information Processing Society Conference (pp. 988-991). Korea Information Processing Society.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kang, M.H., Kang, J.H., Song, W.C., Seok, S.J., Choi, D.J. and Huh, J.W., 2011. A QoS aware forwarding mechanism in OpenFlow Network. In Proceedings of the Korea Information Processing Society Conference (pp. 629-632). Korea Information Processing Society.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Moon, Y.J., Kang, J.H., Kang, M.S., Lee, J.S. and Song, W.C., 2011. SOAP based XML-Vehicle data for managing status of Electric Vehicles. In Proceedings of the Korea Information Processing Society Conference (pp. 1610-1613). Korea Information Processing Society.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kang, M.H., Kang, M.S., Song, W.C. and Lee, J.H., 2010. Monitoring Application Traffic through Dynamic Circuit Network. 한국콘텐츠학회 종합학술대회 논문집, pp.3-4.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Khan, F.A., Ahn, K.J. and Song, W.C., 2010, October. A new location-aware hierarchical routing protocol for MANETs. In International Conference on Ubiquitous Intelligence and Computing (pp. 519-533). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kim, E.S., Lee, Y.S. and Song, W.C., 2010, October. JXTA based content-sharing application. In IEEE Local Computer Network Conference (pp. 993-996). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C., 2010, September. Authentication system for electrical charging of electrical vehicles in the housing development. In International Conference on Security-Enriched Urban Computing and Smart Grid (pp. 261-266). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kang, H.K., Song, W.C. and Hong, C.S., 2010. On Demand Dynamic Circuit Network Implementation. In Proceedings of the Korean Information Science Society Conference (pp. 380-383). Korean Institute of Information Scientists and Engineers.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kang, M.H., Kang, M.S. and Song, W.C., 2010. DCN Deployment and Interoperation to support Broadband based Applications. In Proceedings of the Korea Information Processing Society Conference (pp. 1004-1007). Korea Information Processing Society.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kim, E.S., Lee, S.C., Lee, Y.S., Byun, S.Y., Song, W.C. and Hyun, S.M., 2009. JXTA based Content Sharing P2P Application. 한국콘텐츠학회 ICCC 논문집, pp.22-26.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C. and Lutfiyya, H., 2009, November. Delivery-guaranteed geocast in manets by using zhls. In 2009 Fourth International Conference on Computer Sciences and Convergence Information Technology (pp. 86-90). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Rehman, S.U., Song, W.C. and Park, G.L., 2009. Associativity-Based On-Demand Multi-Path Routing In Mobile Ad Hoc Networks. KSII Transactions on Internet & Information Systems, 3(5).
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Seok, S.J., Kim, N.G., Choi, D. and Song, W.C., 2009, September. An implementation of P2P system for sharing sensory information. In Asia-Pacific Network Operations and Management Symposium (pp. 191-200). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C., Kim, S.S., Seok, S.J. and Choi, D., 2009, August. Pastry based sensor data sharing. In 2009 Proceedings of 18th International Conference on Computer Communications and Networks (pp. 1-6). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C., Rehman, S.U. and Lutfiyya, H., 2009, June. A scalable PBNM framework for MANET management. In 2009 IFIP/IEEE International Symposium on Integrated Network Management (pp. 234-241). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C., Rehman, S.U., Lee, K.J. and Lutfiyya, H., 2009. Active PDP discovery for the policy based MANET management. IEICE transactions on communications, 92(3), pp.1027-1030.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Verma, D.C., 2000. Policy-based networking: architecture and algorithms. New Riders Publishing.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Heo, G. and Song, W.C., 2009, January. Associativity-based dynamic source routing in MANETs. In 2009 International Conference on Information Networking (pp. 1-3). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kim, G. and Song, W.C., 2009. A Zigbee Profile based Management Protocol. In Proceedings of the Korea Information Processing Society Conference (pp. 965-967). Korea Information Processing Society.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kim, G.S., Kim, S.S., Song, W.C., Seok, S.J. and Choi, D., 2009. P2P for Sharing Sensor Data. In Proceedings of the Korea Information Processing Society Conference (pp. 1344-1347). Korea Information Processing Society.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kang, M.H., Kang, M.S., Park, G.L., Lee, J. and Song, W.C., 2009. Monitoring Dynamic Circuit Network on KOREN.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kim, N.G., Seok, S.J., Song, W.C. and Choi, D., 2009. A Design of Virtual Sensor Peer for Sensor P2P. In Proceedings of the Korea Information Processing Society Conference (pp. 975-977). Korea Information Processing Society.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Huh, J.W. and Song, W.C., 2009. Implementation of QoS Provisioning Model in VANET. In Proceedings of the Korea Contents Association Conference (pp. 884-888). The Korea Contents Association.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Huh, J.W. and Song, W.C., 2009. Implementation of Testbed for Policy Based MANET Management. In Proceedings of the KAIS Fall Conference (pp. 994-997). The Korea Academia-Industrial cooperation Society.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Rehman, S.U., Song, W.C., Lee, J., Park, G.L. and Lutfiyya, H., 2007, November. Associativity-based adaptive weighted clustering for large-scale mobile ad hoc networks. In Proceedings of the 19th IASTED International Conference on Parallel and Distributed Computing and Systems (pp. 30-35).
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Rehman, S.U., Song, W.C., Park, G.L. and Lee, J., 2007, October. Cross layer based PBNM for mobile ad hoc networks with vector information in XML. In Asia-Pacific Network Operations and Management Symposium (pp. 165-174). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Lee, J., Shin, I.H., Park, G.L., Song, W.C., Kim, J., Kim, P. and Hong, J., 2007, May. An Efficient Bandwidth Reclaim Scheme for the Integrated Transmission of Real-Time and Non-Real-Time Messages on the WLAN. In International Conference on Computational Science (pp. 925-932). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Khan, F.A., Ahn, K.J. and Song, W.C., 2007, January. Geocasting in wireless ad hoc networks with guaranteed delivery. In International Conference on Information Networking (pp. 213-222). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kim, G.S., Huh, J.W. and Song, W.C., 2007. A Environment Data Monitoring System of Exhibition using Sensor Network and Nano-Q+. In Proceedings of the Korea Information Processing Society Conference (pp. 867-869). Korea Information Processing Society.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kang, M.J., Kim, H.C., Song, W.C., Lee, J., Ko, H.S. and Zurada, J.M., 2007. Stability Analysis of Neural Networks-Differences in Input Space Stability Between Using the Inverted Output of Amplifier and Negative Conductance for Inhibitory Synapse. Lecture Notes in Computer Science, 4491, pp.1015-1024.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kang, M.J., Kim, H.C., Khan, F.A., Song, W.C. and Lee, S.J., 2006, October. Neural networks for optimization problem with nonlinear constraints. In International Conference on Neural Information Processing (pp. 1014-1021). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C. and Choi, D.J., 2006, September. Experiences in end-to-end performance monitoring on KOREN. In Asia-Pacific Network Operations and Management Symposium (pp. 383-392). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Khan, F.A. and Song, W.C., 2006, July. A location-aware zone-based routing protocol for mobile Ad hoc networks. In COIN-NGNCON 2006-The Joint International Conference on Optical Internet and Next Generation Network (pp. 248-250). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Lee, K.J., Lutfiyya, H. and Song, W.C., 2006. Discovery Mechanism of PDP for PBNM in Mobile Ad hoc Networks. KNOM Review, 9(1), p.25.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Khan, F.A., Uppal, M., Song, W.C., Kang, M.J. and Mirza, A.M., 2006, May. FPGA Implementation of a neural network for character recognition. In International Symposium on Neural Networks (pp. 1357-1365). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kang, M.J., Kim, H.C., Khan, F.A., Song, W.C. and Zurada, J.M., 2006, May. Convergence analysis of continuous-time neural networks. In International Symposium on Neural Networks (pp. 100-108). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Park, G.L., Youn, H.Y., Lee, J., Kim, C.S., Lee, B., Lee, S.J., Song, W.C. and Byun, Y.C., 2006, May. Performance evaluation of parallel systems employing roll-forward checkpoint schemes. In International Conference on Computational Science and Its Applications (pp. 185-191). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Lee, K.J., Lutfiyya, H. and Song, W.C., 2006, April. Management of PDP/PEP for PBNM in MANETs. In 2006 IEEE/IFIP Network Operations and Management Symposium NOMS 2006 (pp. 1-4). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Khan, F.A., Ijaz, U.Z., Kim, K.Y., Kang, M.J. and Song, W.C., 2006, January. Policy-Based management in ad hoc networks using geographic routing. In International Conference on Information Networking (pp. 237-246). Springer, Berlin, Heidelberg.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kim, S.S., Song, W.C., Oh, Y.T. and Choi, D.J., 2006. NetFlow based IPv6 user's Flow traffic monitoring. In Proceedings of the Korea Contents Association Conference (pp. 42-46). The Korea Contents Association.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Park, G.L., Youn, H.Y., Lee, J., Kim, C.S., Lee, B., Lee, S.J., Song, W.C. and Byun, Y.C., 2006. Workshop on Parallel and Distributed Computing (PDC 2006)-Performance Evaluation of Parallel Systems Employing Roll-Forward Checkpoint Schemes. Lecture Notes in Computer Science, 3984, pp.185-191.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Kim, K.S., Huh, J.W. and Song, W.C., 2006. A Middleware Architecture and Context Model for Context-aware of Sensor Network in Ubiquitous Environment. In Proceedings of the Korean Institute of Communication Sciences Conference (pp. 369-369). The Korean Institute of Communications and Information Sciences.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        김강석 and 송왕철, 2005. 스마트 홈을 위한 컨텍스트 모델링. 한국지능정보시스템학회 학술대회논문집, pp.193-196.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Ijaz, U.Z., Kim, J.H., Khan, F.A., Song, W.C., Choi, Y.B. and Kim, K.Y., 2005, July. Dynamic Estimation in GPS through Covariance Compensation Extended Kalman Filter. In ITC-CSCC: International Technical Conference on Circuits Systems, Computers and Communications (pp. 571-572).
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Khan, F.A., Lee, K.J. and Song, W.C., 2005. A Framework for Policy-based Management in Ad hoc Network using GPS-based Positioning. 한국통신학회 학술대회논문집, pp.545-548.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C. and Lutfiyya, H., 2002, November. RSVP-based QoS control by policy. In Global Telecommunications Conference, 2002. GLOBECOM'02. IEEE (Vol. 2, pp. 1539-1543). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C., Baek, L.H. and Kang, C.E., 1997. Naming method and its extension to an access control model using the GRM. Electronics Letters, 33(10), pp.838-839.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C., Baek, L.H. and Kang, C.E., 1995, July. Design and implementation of a security management system. In Proceedings of IEEE Singapore International Conference on Networks and International Conference on Information Engineering'95 (pp. 261-264). IEEE.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C. and Kang, C.E., 1995, January. Globally Unique Names for Network Management between TMNs. In JTC-CSCC: Joint Technical Conference on Circuits Systems, Computers and Communications (pp. 397-400).
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C. and Lutfiyya, H., Applying the Policy Scheme to the IETF Integrated Services.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Rivera, J.D., Khan, T.A., Asif, M. and Song, W.C., M-CORD 기반의 네트워크 슬라이스 선택 기능. 기계학습 기반의 가상 네트워크 기능 자원 수요 예측방법, p.35.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Muhammad, A. and Song, W.C., SDN 에서 엘리펀트 플로우의 실시간 분류, 시각화 및 QoS 제어.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Song, W.C., Seok, S.J., Choi, D., Kim, K., Cho, B. and Kim, S., Policy-based Slice Embedding in a virtualized testbed on KREONET.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Chao, H.C., Song, W.C. and Zhanikeev, M., TPC Co-Chairs.
+                    </li>
+                    <li class="list-group-item pubInBody">
+                        Tonouchi, T., Kinoshita, K., Kim, Y., Huang, T.S., Asaka, T., Lee, Y., Lin, P., Takahashi, E., Seok, S.J., Yasuie, T. and Choi, T., Vice Co-Chairs.
+                    </li>
+                </ul>
+            </div>
+
+            <!--Patents-->
+            <div class="row" id="ncl-pub-patents" style="padding: 4rem 0 0 0; width: 100%;">
+                <ul class="list-group pubHead">
+                    <li class="list-group-item text-center pubInHead">Patents</li>
+                    <li class="list-group-item text-center pubInBody">No patents registered yet</li>
+                </ul>
             </div>
 
         </div>
@@ -553,10 +1412,8 @@
                             </div>
                             <p class="card-text text-justify"
                                style="border-top: 1px solid rgba(0,0,0,.125); padding-top: 0.5rem;">
-                                Talha Ahmed Khan received his Bachelors degree in Computer Science from FAST-National
-                                University of Computer and Emerging Sciences Karachi, Pakistan, in 2017. Currently he is
-                                a M.S. Computer Engineering, at Jeju National University, South Korea. His current
-                                research includes NFV, SDN, 5G and Information Security.
+                                Talha Ahmed Khan received the MS(CE) degree from Jeju National University, South Korea in 2019, and Bachelors degree in Computer Science from FAST-National University of Computer and Emerging Sciences Karachi, Pakistan in 2017. 
+                                He is currently pursuing a doctorate in computer engineering at Jeju National University, South Korea. His current research includes NFV, SDN, 5G and Information Security.
                             </p>
                         </div>
                     </div>
@@ -985,6 +1842,42 @@
     jQuery("#copyrightText").html(
         "&copy; " + new Date().getFullYear() + " Network Convergence Lab - Jeju National University, Jeju Si - South Korea 690-756"
     );
+</script>
+<script type="text/javascript">
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    })
+</script>
+<script type="text/javascript">
+    function clipboard(element){
+        var tdElement = $(element).parent().prev().prev().select();
+        copyToClipboard(tdElement);
+        $(element).tooltip('hide').attr('data-original-title', 'citation copied').tooltip('show');
+        doThisAfter(0, 'reverttooltip', element);
+    }
+</script>
+<script type="text/javascript">
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+</script>
+<script type="text/javascript">
+    function doThisAfter(tyme, aktion, element){
+        if(aktion == 'reverttooltip'){
+            setTimeout(function () {
+                $(element).attr('data-original-title', 'click to copy citation');
+            }, tyme);
+        }
+        else if(aktion == 'others'){
+            setTimeout(function () {
+                console.log("Action todo: "+aktion);
+            }, tyme);
+        }
+    }
 </script>
 </body>
 </html>
